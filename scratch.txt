@@ -1,0 +1,7 @@
+ <header class="hero-section">
+        <div class="hero-content">
+            <h1>Welcome to Our Website</h1>
+            <p>Discover beautiful designs and seamless experiences.</p>
+            <a href="#" class="hero-btn">Get Started</a>
+        </div>
+    </header>
