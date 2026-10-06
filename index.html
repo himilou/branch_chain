@@ -3,42 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Branch and Chain Tree Service</title>
+    <title>Bark and Chain Tree Service</title>
     <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<body class="text-bg-dark">
     <!-- The main header holds the background image -->
     <header>      
         <!-- Your existing navbar with its class -->
-        <nav class="header-container">
-            <div class="logo">MyBrand</div>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-            </ul>
-        </nav>
-
-        <!-- Hero text and buttons -->
-        <div class="hero-content">
-            <h1>Welcome to Our Website</h1>
-            <p>Discover beautiful designs and seamless experiences.</p>
-            <a href="#" class="hero-btn">Get Started</a>
+        <nav class="navbar navbar-tan navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <!--<a class="navbar-brand" href="#">🌲BARK & CHAIN</a> -->
+            <a class="navbar-brand" href="/">
+                <img src="assets/images/bark-chain-brand.svg" alt="Bark and Chain" height="40">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Services
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Tree Removal and Pruning</a></li>
+                         <li><a class="dropdown-item" href="#">Winter Assesments</a></li>
+                        <li><a class="dropdown-item" href="#">24 Hr Emergency Services</a></li>
+                        <li><a class="dropdown-item" href="#">Storm Damage</a></li>
+                        <li><a class="dropdown-item" href="#">Stump Removal</a></li>
+                        <li><a class="dropdown-item" href="#">Hedges and Shrubs</a></li>
+                    </ul>
+                    </li>
+                     <li class="nav-item">
+                    <a class="nav-link" href="#testimonialhero">Testimonials</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </header>
-   
+        </nav>
+        <!-- end navbar -->
+    <!-- Centered Hero Section -->
+    <div class="px-4 py-5 my-5 text-center">
+        <!-- SVG Icon / Logo Placeholder -->
+        <img class="d-block mx-auto mb-4" src="assets/images/bark-chain-logo.png"Bootstrap Logo width="380" height="300">
+        
+        <!-- Headline -->
+        <h1 class="display-5 fw-bold text-body-emphasis">Canopy Care Arborists</h1>
+        
+        <!-- Hero Paragraph Description -->
+        <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">Serving King and Snohomish Counties<br/> in<br/> Washington State.</p>
+        </div>
 
+       
+    </div>
+  <!--End Hero Section-->
+ 
+    </header>
+     <!--Carousel start-->
+    <div class="d-flex justify-content-center align-items-center vh-100">
+        <div class="w-40 bg-light p-4">
+    <!-- Content goes here -->
+            <p>Perfectly centered horizontally and vertically at 50% width.</p>
+            <div id="mainCarousel" class="carousel slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="assets/images/arborist1.jpg" class="d-block w-75 carousel-img " alt="chainsaw picture">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/arborist2.jpg" class="d-block w-75 carousel-img " alt="tree picture" width="300" height="240">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/arborist3.jpg" class="d-block w-75 carousel-img " alt="mc picture" width="300" height="240">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- end carousel-->
+   <!-- testimonial section start -->
+      <section class="testimonialhero" id="testimonialhero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow"></span>
+          <h1>Our Satisfied Customers</h1>
+          <p class="lead">
+            Reviews we've gotten from our clients.
+          </p>
+        </div>
+
+        <div class="hero-panel">
+          <div class="mini-card">
+            <div class="mini-label"><h3>Mark A</h3></div>
+            <img src="assets/images/house_danger.jpeg" class="" alt="fallen tree" width="300" height="240">
+          </div>
+
+          <div class="mini-card">       
+            <div style="display:flex; justify-content:space-between; margin-top:10px; font-size:1.0rem; opacity:0.9;">
+                <span>After a bad storm our house was being threatened by a large fallen tree.<br/>
+                Loren responded right away and with his crew immediately went to work securing the tree to protect our home.<br/>
+                They cut and removed the tree in a timely fashion and prevented a large insurance claim. Thanks!
+                </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="container">
+        <div class="cards">
+          <article class="card">
+            <div class="icon">&#x1F332</div>
+            <h3>Rita J</h3>
+            <p>
+              Bark and Chain did a great job at my property. When they had finished the job you couldn't even tell they had been there.
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon">&#x1F332</div>
+            <h3>John Q</h3>
+            <p>
+              I don't know about trees, but Loren likes to ride motorcycles so I'd hire him!
+            </p>
+          </article>
+
+          <article class="card">
+            <div class="icon">&#x1F332</div>
+            <h3>M Jr.</h3>
+            <p>
+             Man, this guy comes and goes like the wind. He never really hangs around for very long.
+            </p>
+          </article>
+    </div>
+    <!-- testimonial section end-->
+    <br/>
     <main>
         <h2>Welcome</h2>
         <p>This is where your main content goes.</p>
+        <ul>Ideas
+            <li>Wood recycle</li>
+            <li>Like it never happened ( before and after )</li>
+            <li>Seattle Tree Permits</li>
+            <li>Licensed bonded and insured</li>
+            <li>Hedges and Shrubs</li>
+            <li>Difficult species like monkey trees</li>
+
+        </ul>
     </main>
 
     <footer>
         <p>&copy; <span id="current-year">2026</span> - Designed and Maintained by JHC</p>
+        <a href="https://himilou.github.io/" class="btn btn-primary" role="button">Contact JHC / Portfolio</a>
     </footer>
 
     <!-- JavaScript path assets/js/ -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+
     <script src="assets/js/script.js"></script>
 </body>
 </html>

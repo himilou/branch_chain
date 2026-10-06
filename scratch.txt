@@ -1,3 +1,16 @@
+ The background is cream, 
+#F2EBDD.
+
+For reference, the rest of the palette is:
+
+Forest green (text and badge ring): 
+#1F3D2B
+Bark brown (chain links, tagline): 
+#7A4F2D
+Fir green (tree): 
+#2F5D3F
+ 
+ 
  <header class="hero-section">
         <div class="hero-content">
             <h1>Welcome to Our Website</h1>
@@ -5,3 +18,22 @@
             <a href="#" class="hero-btn">Get Started</a>
         </div>
     </header>
+
+
+
+
+    hero items 
+
+      <!-- Call to Action Buttons -->
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">Primary Action</button>
+            <button type="button" class="btn btn-outline-secondary btn-lg px-4">Secondary Action</button>
+        </div>
+
+
+         <!-- Optional: Centered Product Mockup / Image -->
+        <div class="overflow-hidden" style="max-height: 30vh;">
+        <div class="container px-5">
+            <img src="https://getbootstrap.com" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example screenshot" width="700" height="500" loading="lazy">
+        </div>
+        </div>
