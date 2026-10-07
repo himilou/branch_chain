@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bark and Chain Tree Service</title>
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <style>
+     /* Dark background container stretching full width */
+.carousel-container {
+  background-color: #121212;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  overflow: hidden;
+}
+
+/* Wrapper handling dynamic scaling and button padding */
+.custom-carousel-wrapper {
+  position: relative;
+  width: 100%;
+  /* Max width accommodates 800px image + 60px padding on each side */
+  max-width: 920px; 
+  padding: 0 60px;
+  box-sizing: border-box;
+}
+
+/* Enforce 4:3 aspect ratio fluidly down to mobile */
+.carousel-inner {
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 4 / 3; /* Keeps the 800x600 proportions perfectly */
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Ensure images scale perfectly inside the track */
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Position controls tightly but outside the image track */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.carousel-control-prev { left: 5px; }
+.carousel-control-next { right: 5px; }
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover { opacity: 1; }
+
+/* White, high-contrast control arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1) drop-shadow(0px 2px 4px rgba(0,0,0,0.3));
+  width: 2rem;
+  height: 2rem;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <div class="carousel-container">
+        <div class="custom-carousel-wrapper">
+
+            <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators  -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+
+                <!-- Carousel Items (800x600px Box) -->
+                <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="assets/images/carsl_news.jpeg" alt="in a tree on the news">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/carsl_water.jpeg" alt="working on a tree over water">
+                    </div>
+                    <div class="carousel-item active">
+                        <img src="assets/images/carsl_chill.jpeg" alt="tree work">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/carsl_dwntwn.jpeg" alt="downtown tree work">
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#mainCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JavaScript Bundle with Popper -->
+    <!-- JavaScript path assets/js/ -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
