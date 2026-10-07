@@ -37,3 +37,14 @@ Fir green (tree):
             <img src="https://getbootstrap.com" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example screenshot" width="700" height="500" loading="lazy">
         </div>
         </div>
+
+
+         <ul>Ideas
+            <li>Wood recycle</li>
+            <li>Like it never happened ( before and after )</li>
+            <li>Seattle Tree Permits</li>
+            <li>Licensed bonded and insured</li>
+            <li>Hedges and Shrubs</li>
+            <li>Difficult species like monkey trees</li>
+
+        </ul>
