@@ -154,6 +154,20 @@ main {
 
 
 /* permits page */
+.accordion {
+  /* Collapsed Colors */
+  --bs-accordion-btn-bg: #0d5232 !important;
+  --bs-accordion-btn-color: #ffffff !important;
+  
+  /* Open/Active Colors */
+  --bs-accordion-active-bg: #1abc9c !important;
+  --bs-accordion-active-color: #ffffff !important;
+}
+
+.accordion-button::after {
+  filter: invert(1) brightness(2) !important;
+}
+
 .bg-permit-container {
   background-color: #1a8d5d;
   color: #ffffff;
