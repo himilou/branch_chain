@@ -1,15 +1,12 @@
-
-
-
 /* Base header holds the background image */
 .home-header {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/wood-endgrain-4k-v2.png);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 80vh; 
-    
-    /* Creates a vertical column grid layout
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/wood-endgrain-4k-v2.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 80vh;
+
+  /* Creates a vertical column grid layout
     display: flex;
     flex-direction: column;
      */
@@ -24,87 +21,184 @@
 
 /* Navbar */
 .navbar-tan {
-  background-color: #F2EBDD !important; /* !important ensures it overrides Bootstrap defaults */
+  background-color: #F2EBDD !important;
+  /* !important ensures it overrides Bootstrap defaults */
 }
 
+.navbar-tan .dropdown-menu {
+  background-color: #F2EBDD;
+}
 
-/* carousel */
-img {
-  max-width: 100%;
+.home-hero-logo {
+  width: min(100%, 280px);
   height: auto;
 }
 
-.carousel-img {
+/* carousel */
+.carousel-container {
+  background-color: transparent;
+  padding: 0 0 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 300px;          
-  object-fit: cover;      /* Crops the image to fit the container without distortion */
-  object-position: center;/* Centers the focus of the image */
+  overflow: hidden;
 }
 
+/* Wrapper handling dynamic scaling and button padding */
+.main-carousel-wrapper {
+  position: relative;
+  width: 100%;
+  /* Max width accommodates 800px image + 60px padding on each side */
+  max-width: 900px;
+  padding: 0 40px;
+  box-sizing: border-box;
+}
+
+/* Enforce 4:3 aspect ratio fluidly down to mobile */
+/* Note image base sizes must be close or carousel will jump around */
+.carousel-inner {
+  width: 100%;
+  max-width: 800px;
+  aspect-ratio: 4 / 3;
+  /* Keeps the 800x600 proportions perfectly */
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* img scaling  */
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Control position */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}
+
+.carousel-control-prev {
+  left: 5px;
+}
+
+.carousel-control-next {
+  right: 5px;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  opacity: 1;
+}
+
+/* control arrows */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: invert(1) drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.3));
+  width: 2rem;
+  height: 2rem;
+}
+
+
+
+/* end carousel */
 /* main page styles*/
 
 main {
- background-color: #2FA26C;
-    border-radius: 24px;
-    padding: 24px;
+  background-color: #2FA26C;
+  border-radius: 24px;
+  padding: 24px;
+}
+
+/* pad next section down to not be overlaid by the menu */
+.menu-offset {
+  padding-top: 36px;
+  padding-bottom: 10px;
 }
 
 .testimonialhero {
-    padding: 70px 0 48px;
-    }
+  padding: 70px 0 48px;
+}
 
 .hero-grid {
-display: grid;
-grid-template-columns: 1.2fr 0.8fr;
-gap: 28px;
-align-items: center;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 28px;
+  align-items: center;
 }
 
 .hero-panel {
-    background: linear-gradient(160deg, #0d5232 0%, #1a8d5d 55%, #31cb64 100%);
-    border-radius: 28px;
-    padding: 24px;
-    color: white;
-    box-shadow: var(--shadow);
+  background: linear-gradient(160deg, #0d5232 0%, #1a8d5d 55%, #31cb64 100%);
+  border-radius: 28px;
+  padding: 36px;
+  color: white;
+  box-shadow: var(--shadow);
 }
 
 .cards {
-    display: grid;
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 24px;
-    margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 18px;
 }
 
 .card {
-    background:  linear-gradient(160deg, #0d5232 0%, #1a8d5d 55%, #31cb64 100%);
-    border: 1px solid var(--border);
-    border-radius: 22px;
-    padding: 26px 22px;
-    box-shadow: 0 10px 20px rgba(23, 57, 86, 0.04);
+  background: linear-gradient(160deg, #0d5232 0%, #1a8d5d 55%, #31cb64 100%);
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  padding: 26px 22px;
+  box-shadow: 0 10px 20px rgba(23, 57, 86, 0.04);
 }
 
 
 /* permits page */
 .bg-permit-container {
-  background-color: #1a8d5d; /* Your custom color */
-  color: #ffffff;            /* Ensures text is readable */
+  background-color: #1a8d5d;
+  /* Your custom color */
+  color: #ffffff;
+  /* Ensures text is readable */
 }
 
-.padded-container { 
-    border: 2px solid var(--border);
-    border-color: black;
-    border-radius: 22px;
-    margin:10px; 
-    padding:10px; 
+.padded-container {
+  border: 2px solid var(--border);
+  border-color: black;
+  border-radius: 22px;
+  margin: 10px;
+  padding: 10px;
 }
 
 /* permit page end */
 
+/* services page */
+.service-container {
+  background: #2FA26C;
+  color: white;
+  box-shadow: var(--shadow);
+  border-radius: 24px;
+  padding: 24px;
+}
+
+
+.list-group-item.custom-list-bg {
+  background-color: #2FA26C; 
+  color: #ffffff;            /* text color */
+}
+
+/* end services */
+
+
 /* footer begin */
 
 footer {
-    align-content:center ;
-    text-align: center;
+  align-content: center;
+  text-align: center;
 }
 
 
@@ -114,13 +208,15 @@ footer {
 
 /* Optional: Make it shorter on mobile screens so it scales nicely */
 @media (max-width: 768px) {
-    .carousel-img {
-        height: 200px;
-    }
-    .hero-grid {
-        grid-template-columns: minmax(0, 1fr);
-    }
-    .cards {
-        grid-template-columns: 1fr;
-    }
+  .carousel-img {
+    height: 200px;
+  }
+
+  .hero-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }

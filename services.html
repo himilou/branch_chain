@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bark and Chain Tree Service</title>
-    <!-- CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bark and Chain Tree Service</title>
+  <!-- CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body class="bg-light">
-      <header class="p-3 bg-dark text-white site-header">
-        <!-- start navbar-->
+     <!-- Your existing navbar with its class -->
         <nav class="navbar navbar-tan navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container-fluid">
                 <!--<a class="navbar-brand" href="#">🌲BARK & CHAIN</a> -->
@@ -34,12 +35,11 @@
                                 Services
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Tree Removal and Pruning</a></li>
-                                <li><a class="dropdown-item" href="#">Winter Assesments</a></li>
-                                <li><a class="dropdown-item" href="#">24 Hr Emergency Services</a></li>
-                                <li><a class="dropdown-item" href="#">Storm Damage</a></li>
-                                <li><a class="dropdown-item" href="#">Stump Removal</a></li>
-                                <li><a class="dropdown-item" href="#">Hedges and Shrubs</a></li>
+                                <li><a class="dropdown-item" href="/services.html#treeserv">Tree Removal and Pruning</a></li>
+                                <li><a class="dropdown-item" href="/services.html#assessment"">Winter Assessments</a></li>
+                                <li><a class="dropdown-item" href="/services.html#storm">Storm Damage</a></li>
+                                <li><a class="dropdown-item" href="/services.html#stump">Stump Removal</a></li>
+                                <li><a class="dropdown-item" href="/services.html#shrub"">Hedges and Shrubs</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -58,73 +58,185 @@
                 </div>
             </div>
         </nav>
-        <!-- end navbar -->
-    </header>
+  <!-- end navbar -->
 
   <!-- Hero Section -->
-  <header class="py-5 bg-primary text-white text-center">
-    <div class="container">
-      <h1 class="display-4 fw-bold">Professional Solutions for You</h1>
-      <p class="lead">We provide high-quality services tailored to help your business grow.</p>
+  <header class="py-5 bg-dark text-white text-center">
+    <div class="menu-offset"></div>
+    <div class="container hero-panel">
+      <h1 class="display-4 fw-bold">Professional Arborist Services</h1>
+      <p class="lead">We provide quality tree, hedge, and bush trimming, pruning, and takedown.<br />
+        Our goal is to leave your property safer and looking better than when we arrived.</p>
     </div>
   </header>
 
   <!-- Services Section -->
-  <section class="py-5" id="services">
+  <section class="py-5 bg-dark" id="services">
     <div class="container">
       <div class="text-center mb-5">
-        <h2 class="fw-bold">Our Services</h2>
-        <p class="text-secondary">Explore what we can do for you</p>
+        <h2 class="fw-bold text-white">Our Services</h2>
       </div>
 
-      <div class="row g-4">
-        <!-- Service Card 1 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="card border-0 shadow-sm h-100">
-            <img src="https://unsplash.com" class="card-img-top" alt="Web Development">
-            <div class="card-body p-4">
-              <h5 class="fw-semibold">Web Development</h5>
-              <p class="text-secondary mt-2">Custom, responsive websites built with modern technologies to showcase your brand online.</p>
-              <a href="#" class="text-decoration-none fw-medium text-primary">Learn More &rarr;</a>
-            </div>
+      <!-- Tree Services Image Left, Text Right -->
+      <div class="service-container service-panel mb-5" id="treeserv">
+        <div class="row align-items-center g-3">
+          <div class="col-md-6">
+            <img class="img-fluid d-block mx-auto" src="assets/images/tree_work2.jpeg" alt="working in a tree">
+            <rect width="100%" height="100%" fill="#55595c"></rect>
           </div>
-        </div>
+          <div class="col-md-6">
+            <h3 class="fw-bold text-white h2">Trees</h3>
+            <ul class="list-group">
+              <!-- List Item 1 -->
+              <li class="list-group-item custom-list-bg border-0">
+                <div class="d-flex w-100 justify-content-between">
+                  <h4 class="mb-1">Tree Removal</h4>
+                </div>
+                <p class="mb-1">When old, dangerous trees need to be removed.</p>
+                <small class="text-white">We strive to work without heavy equipment, like manlifts, to minimize
+                  intrusion
+                  on your property.
+                  We recycle what we take down for use as firewood, playground woodchips, and mulch for planter beds.
+                </small>
+              </li>
 
-        <!-- Service Card 2 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="card border-0 shadow-sm h-100">
-            <img src="https://unsplash.com" class="card-img-top" alt="Data Analytics">
-            <div class="card-body p-4">
-              <h5 class="fw-semibold">Data Analytics</h5>
-              <p class="text-secondary mt-2">Turn your raw data into clear, actionable insights to make smarter business decisions.</p>
-              <a href="#" class="text-decoration-none fw-medium text-primary">Learn More &rarr;</a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Service Card 3 -->
-        <div class="col-lg-4 col-md-6">
-          <div class="card border-0 shadow-sm h-100">
-            <img src="https://unsplash.com" class="card-img-top" alt="Consulting">
-            <div class="card-body p-4">
-              <h5 class="fw-semibold">Business Consulting</h5>
-              <p class="text-secondary mt-2">Strategic guidance to streamline your operations and scale your revenue efficiently.</p>
-              <a href="#" class="text-decoration-none fw-medium text-primary">Learn More &rarr;</a>
-            </div>
+              <!-- List Item 2 -->
+              <li class="list-group-item custom-list-bg border-0">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Pruning and Canopy lifting</h5>
+                </div>
+                <p class="mb-1">Keep your trees healthy and maintain a beautiful yard.</p>
+                <small class="text-white">We specialize in pruning trees to keep them away from your house and
+                  electrical
+                  lines.
+                  We can also thin your trees canopy to keep it healthy and balanced, while optimizing the light that
+                  makes it through to your yard,
+                  letting you get plenty of sun for your flowers and garden.
+                </small>
+              </li>
+              <!-- List Item 3 -->
+              <li class="list-group-item custom-list-bg border-0">
+                <div class="d-flex w-100 justify-content-between">
+                  <h5 class="mb-1">Free Estimates</h5>
+                </div>
+                <p class="mb-1">Worried about cost?</p>
+                <small class="text-white">W are happy to come visit you and provide a free consultation on your property
+                  with recommendations, and a "nothing left out" estimate.<br />
+                  Call us today!
+                </small>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
-    </div>
+
+      <!-- Winter assesment service -->
+      <div class="hero-panel service-panel mb-5" id="assessment">
+        <div class="row align-items-center g-3 flex-md-row-reverse">
+          <div class="col-md-6">
+            <img class="img-fluid d-block mx-auto" src="assets/images/winter-fallen-tree.jpg"
+              alt="fallen tree in winter" />
+          </div>
+          <div class="col-md-6 ">
+            <h3 class="fw-bold h2">Winter Assessments</h3>
+            <p class="text-secondary lead mt-3 text-white">Winter Storms and High Winds</p>
+            <p class="text-secondary text-white">
+              Get a winter assesment before winter arrives. Winter season in the Pacific Northwest brings high winds and
+              often, heavy snow which can cause weak trees to
+              fall or lose large branches.<br />
+              Let us assess your property before a storm causes a fallen tree.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Storm cleanup service-->
+      <div class="hero-panel service-panel mb-5" id="storm">
+        <div class="row align-items-center g-3">
+          <div class="col-md-6">
+            <img class="img-fluid d-block mx-auto" src="assets/images//house_danger1.jpeg"
+              alt="house damaged by tree" />
+          </div>
+          <!--</div>-->
+          <div class="col-md-6">
+            <h3 class="fw-bold h2">Storm Damage</h3>
+            <p class="text-secondary lead mt-3 text-white">
+              If you just suffered a fallen tree from a storm call right away!
+            </p>
+            <p class="text-secondary text-white">
+              Fallen trees often end up resting on weak branches temporarily. Even a weak wind can cause them to fall
+              further potentially
+              causing even more damage to your property.<br /><br />
+              We have experience:
+            <ul>
+              <li>Securing trees to prevent further damage.</li>
+              <li>Working with rope and tackle to move tree sections to the ground safely.</li>
+              <li>Documenting damage for your insurance claim.</li>
+            </ul>
+            </p>
+          </div>
+        </div>
+      </div>
+       <!-- stumpservice -->
+      <div class="hero-panel service-panel mb-5" id="stump">
+        <div class="row align-items-center g-3 flex-md-row-reverse">
+          <div class="col-md-6">
+            <img class="img-fluid d-block mx-auto" src="assets/images/stump1.jpeg" alt="tree stump" />
+          </div>
+          <div class="col-md-6 ">
+            <h3 class="fw-bold h2">Stump Removal</h3>
+            <p class="text-secondary lead mt-3 text-white">Stump grinding and removal services</p>
+            <p class="text-secondary text-white">
+              Old tree stumps are unsightly, can interfere with yard projexts, and house unwanted pests.<br />
+              Let us remove those unsightly stumps.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Storm cleanup service-->
+      <div class="hero-panel service-panel mb-5" id="shrub">
+        <div class="row align-items-center g-3">
+          <div class="col-md-6">
+            <img class="img-fluid d-block mx-auto" src="assets/images/hedge_finished2.jpeg"
+              alt="house damaged by tree" />
+          </div>
+          <!--</div>-->
+          <div class="col-md-6">
+            <h3 class="fw-bold h2">Bushes  &amp; Shrubs</h3>
+            <p class="text-secondary lead mt-3 text-white">
+              We provide quality groundscaping services!
+            </p>
+            <p class="text-secondary text-white">
+              We would love to put the finishing touches on your property. We have years of experience trimming and shaping bushes and shrubs.<br/>
+              Not only can we make your house look fantastic, this improves your homes value!
+            </p>
+          </div>
+        </div>
+      </div>
   </section>
 
-  <!-- Footer -->
- 
-        <footer class="text-center py-4">
-            <p>&copy; <span id="current-year">2026</span> - Designed and Maintained by JHC</p>
-            <a href="https://himilou.github.io/" class="btn btn-secondary" role="button">Contact JHC / Portfolio</a>
-        </footer>
+  <!-- end services-->
 
-  <!-- Bootstrap 5 JS Bundle -->
-  <script src="https://jsdelivr.net"></script>
+  <!-- Footer -->
+  <footer class="text-center py-4 bg-dark text-bg-dark">
+    <p>&copy; <span id="current-year">2026</span> - Designed and Maintained by JHC</p>
+    <a href="https://himilou.github.io/" class="btn btn-secondary" role="button">Contact JHC / Portfolio</a>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
+  <script>
+    const navbarCollapse = document.getElementById('navbarSupportedContent');
+    document.querySelectorAll('#navbarSupportedContent .dropdown-menu .dropdown-item').forEach((link) => {
+      link.addEventListener('click', () => {
+        if (window.matchMedia('(max-width: 991.98px)').matches && navbarCollapse) {
+          bootstrap.Collapse.getOrCreateInstance(navbarCollapse).hide();
+        }
+      });
+    });
+  </script>
 </body>
+
 </html>

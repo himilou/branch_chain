@@ -36,12 +36,11 @@
                                 Services
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Tree Removal and Pruning</a></li>
-                                <li><a class="dropdown-item" href="#">Winter Assesments</a></li>
-                                <li><a class="dropdown-item" href="#">24 Hr Emergency Services</a></li>
-                                <li><a class="dropdown-item" href="#">Storm Damage</a></li>
-                                <li><a class="dropdown-item" href="#">Stump Removal</a></li>
-                                <li><a class="dropdown-item" href="#">Hedges and Shrubs</a></li>
+                                <li><a class="dropdown-item" href="/services.html#treeserv">Tree Removal and Pruning</a></li>
+                                <li><a class="dropdown-item" href="/services.html#assessment"">Winter Assessments</a></li>
+                                <li><a class="dropdown-item" href="/services.html#storm">Storm Damage</a></li>
+                                <li><a class="dropdown-item" href="/services.html#stump">Stump Removal</a></li>
+                                <li><a class="dropdown-item" href="/services.html#shrub"">Hedges and Shrubs</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -61,45 +60,54 @@
             </div>
         </nav>
         <!-- end navbar -->
-        <!-- Centered Hero Section -->
-        <div class="px-4 py-5 my-5 text-center">
-            <!-- SVG Icon / Logo Placeholder -->
-            <img class="d-block mx-auto mb-4" src="assets/images/bark-chain-logo.png" Bootstrap Logo width="380"
-                height="300">
-
+        <!-- Hero Section -->
+        <div class="px-4 pt-5 pb-3 mt-5 mb-0 text-center">
+            <!-- Logo  -->
+            <img class="home-hero-logo d-block mx-auto mb-4" src="assets/images/bark-chain-logo2.png" alt="Bark and Chain Tree Service">
             <!-- Headline -->
             <h1 class="display-5 fw-bold text-body-emphasis">Canopy Care Arborists</h1>
 
-            <!-- Hero Paragraph Description -->
             <div class="col-lg-6 mx-auto">
-                <p class="lead mb-4">Serving King and Snohomish Counties<br /> in<br /> Washington State.</p>
+                <p class="lead mb-4">Serving King and Snohomish Counties<br />in<br />Washington State.</p>
             </div>
-
-
         </div>
         <!--End Hero Section-->
 
-    </header>
     <!--Carousel start-->
-    <div class="d-flex justify-content-center align-items-center vh-100">
-        <div class="w-40 bg-light p-4">
-            <!-- Content goes here -->
-            <p>Perfectly centered horizontally and vertically at 50% width.</p>
-            <div id="mainCarousel" class="carousel slide">
+    <div class="carousel-container">
+        <div class="custom-carousel-wrapper">
+
+            <div id="mainCarousel" class="carousel slide" data-bs-ride="carousel">
+
+                <!-- Indicators  -->
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="1"
+                        aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="2"
+                        aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#mainCarousel" data-bs-slide-to="3"
+                        aria-label="Slide 4"></button>
+                </div>
+
+                <!-- Carousel Items (800x600px Box) -->
                 <div class="carousel-inner">
+                    <div class="carousel-item">
+                        <img src="assets/images/carsl_news.jpeg" alt="in a tree on the news">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="assets/images/carsl_water.jpeg" alt="working on a tree over water">
+                    </div>
                     <div class="carousel-item active">
-                        <img src="assets/images/arborist1.jpg" class="d-block w-75 carousel-img "
-                            alt="chainsaw picture">
+                        <img src="assets/images/carsl_chill.jpeg" alt="tree work">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/images/arborist2.jpg" class="d-block w-75 carousel-img " alt="tree picture"
-                            width="300" height="240">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="assets/images/arborist3.jpg" class="d-block w-75 carousel-img " alt="mc picture"
-                            width="300" height="240">
+                        <img src="assets/images/carsl_dwntwn.jpeg" alt="downtown tree work">
                     </div>
                 </div>
+
+                <!-- Controls -->
                 <button class="carousel-control-prev" type="button" data-bs-target="#mainCarousel" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
@@ -108,10 +116,13 @@
                     <span class="carousel-control-next-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
+
             </div>
+
         </div>
     </div>
     <!-- end carousel-->
+    </header>
     <!-- testimonial section start -->
     <section class="testimonialhero" id="testimonialhero">
         <div class="container hero-grid">
@@ -175,20 +186,10 @@
         <!-- testimonial section end-->
         <br />
         <main>
-            <h2>Welcome</h2>
-            <p>This is where your main content goes.</p>
-            <ul>Ideas
-                <li>Wood recycle</li>
-                <li>Like it never happened ( before and after )</li>
-                <li>Seattle Tree Permits</li>
-                <li>Licensed bonded and insured</li>
-                <li>Hedges and Shrubs</li>
-                <li>Difficult species like monkey trees</li>
-
-            </ul>
+        
         </main>
 
-        <footer class="text-center py-4">
+        <footer class="text-center py-4 bg-dark">
             <p>&copy; <span id="current-year">2026</span> - Designed and Maintained by JHC</p>
             <a href="https://himilou.github.io/" class="btn btn-secondary" role="button">Contact JHC / Portfolio</a>
         </footer>
