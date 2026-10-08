@@ -5,11 +5,6 @@
   background-position: center;
   background-repeat: no-repeat;
   min-height: 80vh;
-
-  /* Creates a vertical column grid layout
-    display: flex;
-    flex-direction: column;
-     */
 }
 
 /* pages without wood grain backgound */
@@ -161,9 +156,7 @@ main {
 /* permits page */
 .bg-permit-container {
   background-color: #1a8d5d;
-  /* Your custom color */
   color: #ffffff;
-  /* Ensures text is readable */
 }
 
 .padded-container {

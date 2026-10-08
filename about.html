@@ -1,72 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
+
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
-            color: #333;
-        }
-        h1 {
-            color: #2c3e50;
-            border-bottom: 2px solid #ecf0f1;
-            padding-bottom: 10px;
-        }
-        h2 {
-            color: #34495e;
-            margin-top: 30px;
-        }
-        ul {
-            padding-left: 20px;
-        }
-        footer {
-            margin-top: 50px;
-            font-size: 0.9em;
-            color: #7f8c8d;
-            text-align: center;
-            border-top: 1px solid #ecf0f1;
-            padding-top: 20px;
-        }
-    </style>
+    <title>Bark and Chain Tree Service</title>
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
 
-    <!-- Main Heading -->
-    <h1>About Me</h1>
-    
-    <!-- Introduction Section -->
-    <p>Hello! Welcome to my page. My name is <strong>[Your Name Here]</strong>, and I am a [Your Profession or Hobby, e.g., web developer, student, photographer] based in [Your City].</p>
-    
-    <p>I enjoy building simple things for the web, learning new technologies, and working on creative projects. This page serves as a small introduction to who I am and what I do.</p>
+<body class="bg-dark text-white text-center">
+    <header>
+         <!-- Your existing navbar with its class -->
+        <nav class="navbar navbar-tan navbar-expand-lg bg-body-tertiary fixed-top">
+            <div class="container-fluid">
+                <!--<a class="navbar-brand" href="#">🌲BARK & CHAIN</a> -->
+                <a class="navbar-brand" href="/">
+                    <img src="assets/images/bark-chain-brand.svg" alt="Bark and Chain" height="40">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Services
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="/services.html#treeserv">Tree Removal and Pruning</a></li>
+                                <li><a class="dropdown-item" href="/services.html#assessment">Winter Assessments</a></li>
+                                <li><a class="dropdown-item" href="/services.html#storm">Storm Damage</a></li>
+                                <li><a class="dropdown-item" href="/services.html#stump">Stump Removal</a></li>
+                                <li><a class="dropdown-item" href="/services.html#shrub">Hedges and Shrubs</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html#testimonialhero">Testimonials</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/permits.html">Permits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-warning btn-md">24/7 Emergency (425) 321-7494</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- end navbar -->
+    </header>
+    <div class="menu-offset"> </div>
+    <div class="container hero-panel">
+          
+        <h1>About Me</h1>
 
-    <!-- Sub-heading & List Section -->
-    <h2>My Interests & Skills</h2>
-    <ul>
-        <li><strong>Web Development:</strong> Learning HTML, CSS, and JavaScript.</li>
-        <li><strong>Creative Hobbies:</strong> Photography, digital design, and writing.</li>
-        <li><strong>Other Passions:</strong> Hiking, reading sci-fi books, and drinking coffee.</li>
-    </ul>
+        <p>Hello. I'm Loren Towsend, The owner of Bark and Chain</p>
 
-    <!-- Contact Info Section -->
-    <h2>Get in Touch</h2>
-    <p>If you'd like to reach out, collaborate on a project, or just say hi, feel free to contact me:</p>
-    <ul>
-        <li>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></li>
-        <li>GitHub: <a href="https://github.com" target="_blank">://github.com</a></li>
-    </ul>
+        <p>I've been an arborist in the puget sound region for over 10 years.</p>
+        <p>I've covered all aspects of tree work from cutting trunks into firewood, to estimating multi tree removals
+            for
+            new developments</p>
+        <p>What I truely love about this line of work though is climbing. Can't beat hanging around in a tree!</p>
+
+        <h2>Get in Touch</h2>
+        <p>If you'd like to reach out, or just say hi, feel free to contact me:</p>
+        <ul>
+            <li>Email: <a href="tloren.66@yahoo.com">tloren.66@yahoo.com</a></li>
+
+        </ul>
+    </div>
+
+
 
     <!-- Footer -->
-  <footer class="text-center py-4">
+
+    <footer class="text-center py-4 bg-dark">
         <p>&copy; <span id="current-year">2026</span> - Designed and Maintained by JHC</p>
         <a href="https://himilou.github.io/" class="btn btn-secondary" role="button">Contact JHC / Portfolio</a>
     </footer>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous">
+    </script>
 </body>
 </html>

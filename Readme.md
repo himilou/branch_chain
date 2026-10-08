@@ -1,6 +1,7 @@
 bark and chain static bootstrap website
 
 Build and run the site with Docker:
+#bash shell commands
 
 ```sh
 docker build -t branch-chain-website .
